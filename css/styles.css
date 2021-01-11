@@ -1,0 +1,402 @@
+/* styles.css */
+/*
+body {
+    text-align: center;
+}
+
+#box {
+    height: 200px;
+    width: 200px;
+    background: #fc3;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 200px;
+}
+
+.thing {
+    height: 200px;
+    width: 200px;
+    background: #ac3;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 200px;
+    border-top-left-radius: 200px;
+}
+
+button {
+    background: #933;
+    color: white;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+body#selectors {
+    text-align: left;
+}
+
+body#events {
+    width: 500px;
+    margin: 0 auto;
+}
+
+form input {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+
+#racetrack {
+    background: url('../img/road.jpg') center left repeat-x;
+    height: 330px;
+    border-right: dashed 10px white;
+    box-sizing: border-box;
+    margin: 40px 0;
+}
+
+.car {
+    display: block;
+    position: relative;
+}
+
+#car1 { top: 30px; }
+#car2 { top: 100px; }
+
+#raceInfoContainer {
+    width: 80%;
+    margin: 40px auto 0;
+    background: #333;
+    height: 200px;
+}
+
+#raceInfoContainer h2 {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: solid 1px white;
+    padding: 20px 0;
+}
+
+.raceInfo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    float: left;
+}
+
+.raceInfo span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+
+#raceInfo1 {
+    color: #77b82f;
+}
+
+#raceInfo2 {
+    color: #b82f3e;
+}
+
+input[type="button"] {
+    background: #77b72f;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px #444;
+}
+
+input#reset {
+    background: #fc3;
+    color: #444;
+}
+
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
+/* _____________________
+JQUERY ANIMATE          
+_________________________*/
+/*
+
+h1 {
+    text-align: center;
+}
+
+#navArrows {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 100px auto 0;
+    background: #333;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    padding: 20px;
+
+}
+
+.navigationArrow {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ffffff;
+    color: #222;
+}
+
+#up {
+    left: 50%;
+    margin-left: -25px;
+
+}
+
+#left, #right {
+    top: 50%;
+    margin-top: -25px;
+
+}
+
+#right {
+    right: 20px;
+    left: inherit;
+
+}
+
+#down {
+    bottom: 20px;
+    top: inherit;
+    left: 50%;
+    margin-left: -25px;
+
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: #a7f;
+    color: white;
+    border: solid 4px #a1f;
+    text-align: center;
+    line-height: 100px;
+    margin: 100px auto 0;
+    opacity: 0.5;
+    position: relative;
+}
+
+/*=====================
+    JQuery CSS
+=====================*/
+/*
+#circle1 {
+    display: inline-block;
+    height: 140px;
+    width: 140px;
+    line-height: 140px;
+    margin: 100px 0 0 600px;
+    text-align: center;
+    color: white;
+    background: goldenrod;
+}
+
+.circleShape {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+*/
+
+body {
+    background: linear-gradient(to top right, rgba(139, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('../img/back.png');
+}
+
+h1 {
+    text-align: center;
+    color: darkgoldenrod;
+
+}
+
+.greeting {
+    backface-visibility: hidden;
+    animation-name: Greeting;
+    animation-duration: 2s;
+    animation-iteration-count: ;
+    animation-timing-function: ease-out;
+}
+
+@keyframes Greeting {
+    0% {
+            opacity: 0;
+            transform: translateX(-20px);
+    }
+
+    95% {
+            transform: translateX(5px);
+    }
+
+    100% {
+            opacity: 1;
+            transform: translate();
+    }
+}
+
+h1 div.inputs {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.inputs {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#racetrack {
+    background: url('../img/road.jpg') center left repeat-x;
+    height: 200px;
+    border-right: dashed 15px white;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.car {
+    display: block;
+    position: relative;
+    height: 80px;
+
+    animation-name: carBoot;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    
+}
+
+@keyframes carBoot {
+    0% {
+            opacity: 0;
+            transform: translateX(-50px);
+    }
+
+    100% {
+            opacity: 1;
+            transform: translateX();
+    }
+}
+
+#car1 {
+    top: 13px;
+}
+
+#car2 {
+    top: 30px;
+}
+
+#raceInfoContainer {
+    width: 80%;
+    margin: 40px auto 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 200px;
+
+    animation-name: raceResult;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes raceResult {
+    0% {
+            opacity: 0;
+            transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY();
+    }
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline 1px white;
+    color: white;
+    font-family: consolas;
+    padding-top: 30px;
+}
+
+.raceInfo {
+    text-align: center;
+    font-size: 24px;
+    width: 50%;
+    float: left;
+    color: white;
+    font-family: Exotc350 Bd BT;
+    padding-top: 50px;
+}
+
+.raceInfo span {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+
+
+}
+
+#raceInfo1 {
+    color: green;
+}
+
+#raceInfo2 {
+    color: red;
+}
+
+input[type="button"] {
+    background: #77b72f;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px #444;
+
+}
+
+input#reset {
+    background: #fc3;
+    color: white;
+ 
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#buttonFlow {
+    margin: 0 auto;
+    left: 50%;
+}
+
+footer {
+    height: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    text-align: center;
+    color: white;
+    padding-top: 4px;
+    
+}
+
+
+
+
+
+
+
